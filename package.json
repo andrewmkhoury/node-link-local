@@ -1,0 +1,27 @@
+{
+  "name": "npll",
+  "version": "1.0.0",
+  "description": "Node Package Link Local — sync a local npm package into another project via staged tarballs (pnpm/yarn/npm agnostic)",
+  "type": "module",
+  "bin": {
+    "npll": "./bin/npll.js"
+  },
+  "scripts": {
+    "start": "node bin/npll.js",
+    "test": "node test/run.js"
+  },
+  "keywords": [
+    "local",
+    "link",
+    "npm",
+    "pnpm",
+    "yarn",
+    "workspace",
+    "tarball",
+    "monorepo"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
