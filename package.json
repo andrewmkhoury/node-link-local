@@ -4,8 +4,7 @@
   "description": "Sync a local npm package into another project via staged tarballs (pnpm/yarn/npm agnostic). No symlinks.",
   "type": "module",
   "bin": {
-    "node-link-local": "bin/node-link-local.js",
-    "nll": "bin/node-link-local.js"
+    "node-link-local": "./bin/node-link-local.js"
   },
   "files": [
     "bin",

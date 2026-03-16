@@ -35,8 +35,6 @@ Or run without installing:
 npx node-link-local add /path/to/lib /path/to/app
 ```
 
-Shortcut: the `nll` command is also available after install (`nll add ...`, `nll remove ...`).
-
 ## Commands
 
 | Command | Description |
@@ -49,8 +47,6 @@ Shortcut: the `nll` command is also available after install (`nll add ...`, `nll
 ```bash
 # Use a local package "my-lib" inside "my-app"
 node-link-local add ./packages/my-lib ./apps/my-app
-# or
-nll add ./packages/my-lib ./apps/my-app
 
 # Stop using the local copy
 node-link-local remove ./packages/my-lib ./apps/my-app
