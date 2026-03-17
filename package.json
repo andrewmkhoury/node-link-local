@@ -17,7 +17,8 @@
   "homepage": "https://github.com/andrewmkhoury/node-link-local#readme",
   "scripts": {
     "start": "node bin/node-link-local.js",
-    "test": "node test/run.js"
+    "test": "node test/run.js",
+    "release": "bash scripts/publish.sh"
   },
   "keywords": [
     "local",

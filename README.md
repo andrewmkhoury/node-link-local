@@ -85,7 +85,13 @@ Works on **Windows, macOS, and Linux**. Uses only Node built-ins (`path`, `fs`, 
 
 ## Re-publishing (maintainers)
 
-After changing the source in this repo and before publishing a new version:
+**One-shot (bump + publish + push):**
+```bash
+./scripts/publish.sh [patch|minor|major]   # default: patch
+# or: npm run release -- [patch|minor|major]
+```
+
+Manual steps, if you prefer:
 
 1. **Bump the version** in `package.json` (or use npm):
    ```bash
