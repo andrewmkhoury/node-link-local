@@ -83,6 +83,37 @@ Paths are relative to the current directory. Both the library and app must conta
 
 Works on **Windows, macOS, and Linux**. Uses only Node built-ins (`path`, `fs`, `os`, `child_process`) and the system `PATH` to run pnpm/yarn/npm, so no shell-specific or platform-specific code.
 
+## Re-publishing (maintainers)
+
+After changing the source in this repo and before publishing a new version:
+
+1. **Bump the version** in `package.json` (or use npm):
+   ```bash
+   npm version patch   # 1.0.0 → 1.0.1
+   # or: minor, major, or 1.0.0-alpha.2, etc.
+   ```
+
+2. **Log in to the public npm registry** (if needed):
+   ```bash
+   npm login --registry https://registry.npmjs.org/
+   ```
+
+3. **Publish to the public registry**:
+   ```bash
+   npm publish --registry https://registry.npmjs.org/ --access public
+   ```
+
+   To publish to the public registry by default, add to `package.json`:
+   ```json
+   "publishConfig": { "registry": "https://registry.npmjs.org/" }
+   ```
+   Then you can run `npm publish --access public` without `--registry`.
+
+4. **Push the version tag** (if you used `npm version`):
+   ```bash
+   git push && git push --tags
+   ```
+
 ## License
 
 MIT
