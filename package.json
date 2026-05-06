@@ -1,6 +1,6 @@
 {
   "name": "node-link-local",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "description": "Sync a local npm package into another project via staged tarballs (pnpm/yarn/npm agnostic). No symlinks.",
   "type": "module",
   "bin": {
@@ -17,7 +17,7 @@
   "homepage": "https://github.com/andrewmkhoury/node-link-local#readme",
   "scripts": {
     "start": "node bin/node-link-local.js",
-    "test": "node test/run.js",
+    "test": "node --test test/*.test.js",
     "release": "bash scripts/publish.sh"
   },
   "keywords": [
